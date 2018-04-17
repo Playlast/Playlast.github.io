@@ -107,7 +107,7 @@
 <meta property="og:site_name" content="Playlast&#39;s Blog">
 <meta property="og:description" content="题目链接[HAOI2009]逆序对数列 题意简述求 $n \ (n &amp;lt;= 1000)$ 的全排列中逆序对个数为 $k \ (k &amp;lt;= 1000)$ 的数目。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-16T13:03:04.317Z">
+<meta property="og:updated_time" content="2018-04-16T13:08:44.353Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[HAOI2009] 逆序对数列">
 <meta name="twitter:description" content="题目链接[HAOI2009]逆序对数列 题意简述求 $n \ (n &amp;lt;= 1000)$ 的全排列中逆序对个数为 $k \ (k &amp;lt;= 1000)$ 的数目。">
@@ -455,13 +455,13 @@
         <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><h4 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h4><p><a href="https://www.luogu.org/problemnew/show/2513" target="_blank" rel="noopener">[HAOI2009]逆序对数列</a></p>
 <h4 id="题意简述"><a href="#题意简述" class="headerlink" title="题意简述"></a>题意简述</h4><p>求 $n \ (n &lt;= 1000)$ 的全排列中逆序对个数为 $k \ (k &lt;= 1000)$ 的数目。</p>
 <a id="more"></a>
-<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><h4 id="暴力"><a href="#暴力" class="headerlink" title="暴力"></a>暴力</h4><p>暴力枚举全排列 <script type="math/tex">(std::next \_ permutation)</script> ，暴力统计。<br>时间复杂度： $O(!n * n^{2})$<br>预期得分： $(30)$</p>
-<h4 id="暴力-UDP"><a href="#暴力-UDP" class="headerlink" title="暴力-UDP"></a>暴力-UDP</h4><p>暴力枚举全排列 <script type="math/tex">(std::next \_ permutation)</script> ，树状数组求逆序对。<br>时间复杂度： $O(!n * nlogn)$<br>预期得分： $(30)$</p>
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><h4 id="暴力"><a href="#暴力" class="headerlink" title="暴力"></a>暴力</h4><p>暴力枚举全排列 <script type="math/tex">(std::next \_ permutation)</script> ，暴力统计。<br>时间复杂度： $O(!n * n^{2})$ 。<br>预期得分： $(30)$。</p>
+<h4 id="暴力-UDP"><a href="#暴力-UDP" class="headerlink" title="暴力-UDP"></a>暴力-UDP</h4><p>暴力枚举全排列 <script type="math/tex">(std::next \_ permutation)</script> ，树状数组求逆序对。<br>时间复杂度： $O(!n * nlogn)$ 。<br>预期得分： $(30)$。</p>
 <h4 id="DP"><a href="#DP" class="headerlink" title="DP"></a>DP</h4><p>新来的数是坠大的，所以把它插入到第 $pos$ 个位置会产生 $(n - pos - 1)$ 个逆序对。<br>状态转移方程： </p>
 <script type="math/tex; mode=display">\begin {equation*}
 f[n][k] = \sum _ {h=std::max(0, k - n + 1)}^kf[n - 1][h]
- \end {equation*}</script><p>时间复杂度： $O(n^{3})$<br>预期得分： $(60)$</p>
-<h4 id="DP-UDP"><a href="#DP-UDP" class="headerlink" title="DP-UDP"></a>DP-UDP</h4><p>可以发现每次转移都是一段区间，考虑用前缀和维护。<br>时间复杂度： $O(n^{2})$<br>预期得分： $(100)$</p>
+ \end {equation*}</script><p>时间复杂度： $O(n^{3})$ 。<br>预期得分： $(60)$。</p>
+<h4 id="DP-UDP"><a href="#DP-UDP" class="headerlink" title="DP-UDP"></a>DP-UDP</h4><p>可以发现每次转移都是一段区间，考虑用前缀和维护。<br>时间复杂度： $O(n^{2})$ 。<br>预期得分： $(100)$。</p>
 <h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> REG register</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> IN inline</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> For(x,y,z) for (REG int (x) = (y); (x) &lt;= (z); ++(x))</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> FOR(x,y,z) for (REG int (x) = (y); (x) &lt;  (z); ++(x))</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> kmax_num = <span class="number">1e3</span> + <span class="number">10</span>, kmax_int = <span class="number">2147483647</span>, kmod = <span class="number">1e4</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n, m;</span><br><span class="line"><span class="keyword">int</span> f[kmax_num][kmax_num];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">Mod</span><span class="params">(REG <span class="keyword">int</span>&amp; num)</span>	</span>&#123;</span><br><span class="line">    <span class="keyword">while</span>(num &lt; <span class="number">0</span>)		num += kmod;</span><br><span class="line">    <span class="keyword">while</span>(num &gt;= kmod)	num -= kmod;</span><br><span class="line">    <span class="keyword">return</span> ;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">cin</span> &gt;&gt; n &gt;&gt; m;</span><br><span class="line"></span><br><span class="line">    f[<span class="number">2</span>][<span class="number">0</span>] = f[<span class="number">2</span>][<span class="number">1</span>] = <span class="number">1</span>;</span><br><span class="line">    s[<span class="number">2</span>][<span class="number">0</span>] = <span class="number">1</span>, s[<span class="number">2</span>][<span class="number">1</span>] = <span class="number">2</span>, s[<span class="number">2</span>][<span class="number">2</span>] = <span class="number">2</span>, s[<span class="number">2</span>][<span class="number">3</span>] = <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line">    REG <span class="keyword">int</span> sum;</span><br><span class="line">    For(i,<span class="number">3</span>,n)	&#123;</span><br><span class="line">        sum = <span class="number">0</span>;</span><br><span class="line">        For(h,<span class="number">0</span>,m)	&#123;</span><br><span class="line">            sum += f[i - <span class="number">1</span>][h];</span><br><span class="line">            <span class="keyword">if</span>(h - i &gt;= <span class="number">0</span>)	sum -= f[i - <span class="number">1</span>][h - i];</span><br><span class="line">            Mod(sum);</span><br><span class="line">            f[i][h] = sum;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, f[n][m]);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="杂项"><a href="#杂项" class="headerlink" title="杂项"></a>杂项</h3><ul>
 <li>一开始没用前缀和 $TLE$ 还 $debug$ 了好久。</li>
@@ -511,6 +511,10 @@ f[n][k] = \sum _ {h=std::max(0, k - n + 1)}^kf[n - 1][h]
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/SCOI2008-配对/" rel="prev" title="[SCOI2008] 配对">
+                [SCOI2008] 配对 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -588,7 +592,7 @@ f[n][k] = \sum _ {h=std::max(0, k - n + 1)}^kf[n - 1][h]
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -712,7 +716,7 @@ f[n][k] = \sum _ {h=std::max(0, k - n + 1)}^kf[n - 1][h]
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">18k</span>
+    <span title="站点总字数">20k</span>
   
 
   
@@ -723,7 +727,7 @@ f[n][k] = \sum _ {h=std::max(0, k - n + 1)}^kf[n - 1][h]
     
       <span class="post-meta-item-text">站点总阅读时长：</span>
     
-    <span title="站点总阅读时长">7 mins.</span>
+    <span title="站点总阅读时长">8 mins.</span>
   
 </div>
 
