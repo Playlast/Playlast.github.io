@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[[HNOI2010] 弹飞绵羊]]></title>
+    <url>%2F%2FHNOI2010-%E5%BC%B9%E9%A3%9E%E7%BB%B5%E7%BE%8A%2F</url>
+    <content type="text"><![CDATA[题目链接[HNOI2010]弹飞绵羊 题意简述地上沿着一条直线摆着 n 个装置，每个装置设定初始弹力系数 k_{i} ，当绵羊达到第 i 个装置时，它会往后弹 k_{i}步，达到第 i + k_{i} 个装置，若不存在第 i + k_{i} 个装置，则绵羊被弹飞。 要支持 2 种操作。 查询从 x 出发后几次被弹飞。 将 x 处的弹力系数改为 y 。 思路优雅的高级暴力你们肯定没见过这种暴力！要修改就不改，累计到了 $lim$ 再一起重新统计。暴力查询。就这样。（说到底还是暴力时间复杂度： $(n?)$ 。随机数据能保证复杂度。但要是碰到毒瘤出题人就会被卡掉。 LCT我太蒻了，学了再补全。 代码高级暴力12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455#include &lt;bits/stdc++.h&gt;#define REG register#define IN inline#define For(x,y,z) for (REG int (x) = (y); (x) &lt;= (z); ++(x))#define FOR(x,y,z) for (REG int (x) = (y); (x) &lt; (z); ++(x))const int kmax_num = 2e5 + 10, kmax_int = 2147483647, kmod = 1e4;int n, m, lim = 100, last;int f[kmax_num], c[kmax_num], t[kmax_num];inline void Flush() &#123; for(REG int i = n - 1; i &gt;= 0; --i) &#123; if(c[i]) f[i] = c[i], c[i] = 0; if(i + f[i] &gt;= n) t[i] = 1; else t[i] = t[i + f[i]] + 1; &#125; return ;&#125;inline int Query(REG int pos) &#123; REG int ans = 0; while(pos &lt;= last) &#123; pos += (c[pos] ? c[pos] : f[pos]); ++ans; &#125; return t[pos] + ans;&#125;int main() &#123; std::cin &gt;&gt; n; FOR(i,0,n) std::cin &gt;&gt; f[i]; std::cin &gt;&gt; m; REG int cmd, x, y; FOR(i,0,m) &#123; if(lim == 100) lim = 0, last = -1, Flush(); std::cin &gt;&gt; cmd; if(cmd == 1) &#123; std::cin &gt;&gt; x; printf("%d\n", Query(x)); &#125; else &#123; std::cin &gt;&gt; x &gt;&gt; y; if((f[x] == y &amp;&amp; c[x] == 0) || c[x] == y) continue; if(f[x] == y &amp;&amp; c[x] != 0) c[x] = 0; if(f[x] != y) &#123; c[x] = y, ++lim; last = std::max(last, x); &#125; &#125; &#125; return 0;&#125; 杂项 高级暴力中的 $lim$ 你们可以尝试改一下。]]></content>
+      <categories>
+        <category>各省省选</category>
+      </categories>
+      <tags>
+        <tag>LCT</tag>
+        <tag>高级暴力</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[[SDOI2008] 洞穴勘测]]></title>
     <url>%2F%2FSDOI2008-%E6%B4%9E%E7%A9%B4%E5%8B%98%E6%B5%8B%2F</url>
     <content type="text"><![CDATA[题目链接[SDOI2008]洞穴勘测 题意简述使一棵树支持3种操作： 连接 (u, v) 。 断开 (u, v) 。 查询 (u, v) 是否联通。 思路暴力并查集这很明显就是维护动态森林吧。每次操作前先将 $x$ 提根。连接时将 $y$ 设为 $x$ 的父亲。断开时将 $y$ 的父亲设为 $0$ 。暴力查询。玄学复杂度。时间复杂度： $O(?)$ 。不过据说是随机数据所以跑得比香港记者还快。 LCT我太蒻了，学了再补全。 代码暴力并查集123456789101112131415161718192021222324252627282930313233343536#include &lt;bits/stdc++.h&gt;#define REG register#define IN inline#define For(x,y,z) for (REG int (x) = (y); (x) &lt;= (z); ++(x))#define FOR(x,y,z) for (REG int (x) = (y); (x) &lt; (z); ++(x))const int kmax_num = 1e4+ 10, kmax_int = 2147483647, kmod = 1e9+7;int n, m;int f[kmax_num];inline void SPlay(REG int x) &#123; for(REG int a = 0, fa = f[x]; x; fa = f[x]) f[x] = a, a = x, x = fa; return ;&#125;int main() &#123; std::cin &gt;&gt; n &gt;&gt; m; REG char cmd; REG int u, v; FOR(i,0,m) &#123; while(!isalpha(cmd = getchar())) continue; std::cin &gt;&gt; u &gt;&gt; v; SPlay(u); if(cmd == 'C') f[u] = v; else if(cmd == 'D') f[v] = 0; else &#123; for( ; u != v &amp;&amp; v; v = f[v]) continue; puts(u == v ? "Yes" : "No"); &#125; &#125; return 0;&#125; 杂项 并查集提根就相当于翻转区间 (Splay) 。]]></content>
@@ -8,8 +20,8 @@
         <category>各省省选</category>
       </categories>
       <tags>
-        <tag>并查集</tag>
         <tag>LCT</tag>
+        <tag>并查集</tag>
       </tags>
   </entry>
   <entry>
