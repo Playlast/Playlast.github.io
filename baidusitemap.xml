@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://playlast.github.io//HNOI2010-%E5%BC%B9%E9%A3%9E%E7%BB%B5%E7%BE%8A/</loc>
-    <lastmod>2018-04-18T13:59:01.155Z</lastmod>
+    <lastmod>2018-04-19T04:41:34.497Z</lastmod>
     <data>
         <display>
         <title>[HNOI2010] 弹飞绵羊</title>
@@ -33,9 +33,9 @@
         <title>[SDOI2008] 洞穴勘测</title>
         <pubTime>2018-04-18T05:21:15.000Z</pubTime>
         
-        <tag>并查集</tag>
-         
         <tag>LCT</tag>
+         
+        <tag>并查集</tag>
          
          
            
@@ -77,9 +77,9 @@
         <title>[SCOI2011] 糖果</title>
         <pubTime>2018-04-10T06:05:15.000Z</pubTime>
         
-        <tag>图论</tag>
-         
         <tag>差分约束</tag>
+         
+        <tag>图论</tag>
          
          
            
