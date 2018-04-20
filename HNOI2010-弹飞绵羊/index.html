@@ -99,18 +99,18 @@
 
 
 
-  <meta name="description" content="题目链接[HNOI2010]弹飞绵羊 题意简述地上沿着一条直线摆着 n 个装置，每个装置设定初始弹力系数 k_{i} ，当绵羊达到第 i 个装置时，它会往后弹 k_{i}步，达到第 i + k_{i} 个装置，若不存在第 i + k_{i} 个装置，则绵羊被弹飞。 要支持 2 种操作。  查询从 x 出发后几次被弹飞。 将 x 处的弹力系数改为 y 。">
+  <meta name="description" content="题目链接[HNOI2010]弹飞绵羊 题意简述地上沿着一条直线摆着 n (n">
 <meta name="keywords" content="LCT,高级暴力">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[HNOI2010] 弹飞绵羊">
 <meta property="og:url" content="https://playlast.github.io/HNOI2010-弹飞绵羊/index.html">
 <meta property="og:site_name" content="Playlast&#39;s Blog">
-<meta property="og:description" content="题目链接[HNOI2010]弹飞绵羊 题意简述地上沿着一条直线摆着 n 个装置，每个装置设定初始弹力系数 k_{i} ，当绵羊达到第 i 个装置时，它会往后弹 k_{i}步，达到第 i + k_{i} 个装置，若不存在第 i + k_{i} 个装置，则绵羊被弹飞。 要支持 2 种操作。  查询从 x 出发后几次被弹飞。 将 x 处的弹力系数改为 y 。">
+<meta property="og:description" content="题目链接[HNOI2010]弹飞绵羊 题意简述地上沿着一条直线摆着 n (n">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-20T05:38:18.253Z">
+<meta property="og:updated_time" content="2018-04-20T06:19:41.293Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[HNOI2010] 弹飞绵羊">
-<meta name="twitter:description" content="题目链接[HNOI2010]弹飞绵羊 题意简述地上沿着一条直线摆着 n 个装置，每个装置设定初始弹力系数 k_{i} ，当绵羊达到第 i 个装置时，它会往后弹 k_{i}步，达到第 i + k_{i} 个装置，若不存在第 i + k_{i} 个装置，则绵羊被弹飞。 要支持 2 种操作。  查询从 x 出发后几次被弹飞。 将 x 处的弹力系数改为 y 。">
+<meta name="twitter:description" content="题目链接[HNOI2010]弹飞绵羊 题意简述地上沿着一条直线摆着 n (n">
 
 
 
@@ -411,37 +411,28 @@
 
           
           
-		 
-          
+		  
+         <div class="post-time">
+           <span class="post-meta-item-icon">
+             <i class="fa fa-file-word-o"></i>
+           </span>
+           <span class="post-meta-item-text">字数统计 : </span>
+           <span class="post-count">495 </span>
+           
+         </span>
+	  
+      <span class="post-time">
+	   &nbsp; | &nbsp;
+           <span class="post-meta-item-icon">
+             <i class="fa fa-clock-o"></i>
+           </span>
+           <span class="post-meta-item-text">阅读时长 ≈</span>
+           <span class="post-count">2 mins.</span>
+           
+         </span>
 
           
-            <div class="post-symbolscount">
-              
 
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计：</span>
-                
-                <span title="字数统计">1.9k</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长&asymp;</span>
-                
-                <span title="阅读时长">4 mins.</span>
-              
-            </div>
           
 		  
           
@@ -460,8 +451,8 @@
 
       
         <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><h4 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h4><p><a href="https://www.luogu.org/problemnew/show/3203" target="_blank" rel="noopener">[HNOI2010]弹飞绵羊</a></p>
-<h4 id="题意简述"><a href="#题意简述" class="headerlink" title="题意简述"></a>题意简述</h4><p>地上沿着一条直线摆着 <script type="math/tex">n</script> 个装置，每个装置设定初始弹力系数 <script type="math/tex">k_{i}</script> ，当绵羊达到第 <script type="math/tex">i</script> 个装置时，它会往后弹 <script type="math/tex">k_{i}</script>步，达到第 <script type="math/tex">i + k_{i}</script> 个装置，若不存在第 <script type="math/tex">i + k_{i}</script> 个装置，则绵羊被弹飞。</p>
-<p>要支持 <script type="math/tex">2</script> 种操作。</p>
+<h4 id="题意简述"><a href="#题意简述" class="headerlink" title="题意简述"></a>题意简述</h4><p>地上沿着一条直线摆着 <script type="math/tex">n (n <= 200000)</script> 个装置，每个装置设定初始弹力系数 <script type="math/tex">k_{i}</script> ，当绵羊达到第 <script type="math/tex">i</script> 个装置时，它会往后弹 <script type="math/tex">k_{i}</script>步，达到第 <script type="math/tex">i + k_{i}</script> 个装置，若不存在第 <script type="math/tex">i + k_{i}</script> 个装置，则绵羊被弹飞。</p>
+<p>要支持 <script type="math/tex">m (m <= 100000)</script> 次 <script type="math/tex">2</script> 种操作。</p>
 <ul>
 <li>查询从 <script type="math/tex">x</script> 出发后几次被弹飞。</li>
 <li>将 <script type="math/tex">x</script> 处的弹力系数改为 <script type="math/tex">y</script> 。</li>
@@ -739,25 +730,16 @@
   <span class="author" itemprop="copyrightHolder">Playlast</span>
 
   
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
+  
+  <span class="post-meta-divider">|</span>
+      <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    
-      <span class="post-meta-item-text">站点总字数：</span>
-    
-    <span title="站点总字数">25k</span>
-  
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">站点总字数 ： 6.3k</span>
+</div>
 
-  
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-coffee"></i>
-    </span>
-    
-      <span class="post-meta-item-text">站点总阅读时长：</span>
-    
-    <span title="站点总阅读时长">51 mins.</span>
   
 </div>
 
