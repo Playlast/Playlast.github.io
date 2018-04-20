@@ -4,100 +4,12 @@
 
     
   <url>
-    <loc>https://playlast.github.io//HNOI2010-%E5%BC%B9%E9%A3%9E%E7%BB%B5%E7%BE%8A/</loc>
-    <lastmod>2018-04-19T04:41:34.497Z</lastmod>
+    <loc>https://playlast.github.io//HNOI2004-%E6%89%93%E9%BC%B9%E9%BC%A0/</loc>
+    <lastmod>2018-04-20T06:11:08.149Z</lastmod>
     <data>
         <display>
-        <title>[HNOI2010] 弹飞绵羊</title>
-        <pubTime>2018-04-18T13:08:08.000Z</pubTime>
-        
-        <tag>LCT</tag>
-         
-        <tag>高级暴力</tag>
-         
-         
-           
-             
-              <breadCrumb title="各省省选" url="https://playlast.github.io/categories/%E5%90%84%E7%9C%81%E7%9C%81%E9%80%89/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://playlast.github.io//SDOI2008-%E6%B4%9E%E7%A9%B4%E5%8B%98%E6%B5%8B/</loc>
-    <lastmod>2018-04-18T13:21:47.720Z</lastmod>
-    <data>
-        <display>
-        <title>[SDOI2008] 洞穴勘测</title>
-        <pubTime>2018-04-18T05:21:15.000Z</pubTime>
-        
-        <tag>LCT</tag>
-         
-        <tag>并查集</tag>
-         
-         
-           
-             
-              <breadCrumb title="各省省选" url="https://playlast.github.io/categories/%E5%90%84%E7%9C%81%E7%9C%81%E9%80%89/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://playlast.github.io//SDOI2005-%E9%98%B6%E6%A2%AF%E6%95%99%E5%AE%A4%E8%AE%BE%E5%A4%87%E5%88%A9%E7%94%A8/</loc>
-    <lastmod>2018-04-18T05:38:49.912Z</lastmod>
-    <data>
-        <display>
-        <title>[SDOI2005] 阶梯教室设备利用</title>
-        <pubTime>2018-04-07T12:51:01.000Z</pubTime>
-        
-        <tag>DP</tag>
-         
-        <tag>线段树</tag>
-         
-         
-           
-             
-              <breadCrumb title="各省省选" url="https://playlast.github.io/categories/%E5%90%84%E7%9C%81%E7%9C%81%E9%80%89/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://playlast.github.io//SCOI2011-%E7%B3%96%E6%9E%9C/</loc>
-    <lastmod>2018-04-17T12:06:07.931Z</lastmod>
-    <data>
-        <display>
-        <title>[SCOI2011] 糖果</title>
-        <pubTime>2018-04-10T06:05:15.000Z</pubTime>
-        
-        <tag>差分约束</tag>
-         
-        <tag>图论</tag>
-         
-         
-           
-             
-              <breadCrumb title="各省省选" url="https://playlast.github.io/categories/%E5%90%84%E7%9C%81%E7%9C%81%E9%80%89/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://playlast.github.io//SCOI2008-%E9%85%8D%E5%AF%B9/</loc>
-    <lastmod>2018-04-17T10:58:08.768Z</lastmod>
-    <data>
-        <display>
-        <title>[SCOI2008] 配对</title>
-        <pubTime>2018-04-17T10:49:05.000Z</pubTime>
+        <title>[HNOI2004] 打鼹鼠</title>
+        <pubTime>2018-04-19T23:27:16.000Z</pubTime>
         
         <tag>DP</tag>
          
@@ -106,25 +18,8 @@
              
               <breadCrumb title="各省省选" url="https://playlast.github.io/categories/%E5%90%84%E7%9C%81%E7%9C%81%E9%80%89/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://playlast.github.io//HAOI2007-%E7%90%86%E6%83%B3%E7%9A%84%E6%AD%A3%E6%96%B9%E5%BD%A2/</loc>
-    <lastmod>2018-04-16T13:12:35.608Z</lastmod>
-    <data>
-        <display>
-        <title>[HAOI2007] 理想的正方形</title>
-        <pubTime>2018-04-13T04:53:50.000Z</pubTime>
-        
-        <tag>二维RMQ</tag>
-         
-         
-           
              
-              <breadCrumb title="各省省选" url="https://playlast.github.io/categories/%E5%90%84%E7%9C%81%E7%9C%81%E9%80%89/"/>
+              <breadCrumb title="HNOI" url="https://playlast.github.io/categories/%E5%90%84%E7%9C%81%E7%9C%81%E9%80%89/HNOI/"/>
           
         </display>
     </data>
@@ -133,7 +28,7 @@
     
   <url>
     <loc>https://playlast.github.io//HAOI2009-%E9%80%86%E5%BA%8F%E5%AF%B9%E6%95%B0%E5%88%97/</loc>
-    <lastmod>2018-04-16T13:08:44.353Z</lastmod>
+    <lastmod>2018-04-20T06:08:29.361Z</lastmod>
     <data>
         <display>
         <title>[HAOI2009] 逆序对数列</title>
@@ -148,15 +43,140 @@
              
               <breadCrumb title="各省省选" url="https://playlast.github.io/categories/%E5%90%84%E7%9C%81%E7%9C%81%E9%80%89/"/>
           
+             
+              <breadCrumb title="HAOI" url="https://playlast.github.io/categories/%E5%90%84%E7%9C%81%E7%9C%81%E9%80%89/HAOI/"/>
+          
         </display>
     </data>
     </url>
 
     
+  <url>
+    <loc>https://playlast.github.io//AHOI2012-%E4%BF%A1%E5%8F%B7%E5%A1%94/</loc>
+    <lastmod>2018-04-20T05:56:59.789Z</lastmod>
+    <data>
+        <display>
+        <title>[AHOI2012] 信号塔</title>
+        <pubTime>2018-04-19T23:27:11.000Z</pubTime>
+        
+        <tag>计算几何</tag>
+         
+        <tag>最小圆覆盖</tag>
+         
+         
+           
+             
+              <breadCrumb title="各省省选" url="https://playlast.github.io/categories/%E5%90%84%E7%9C%81%E7%9C%81%E9%80%89/"/>
+          
+             
+              <breadCrumb title="AHOI" url="https://playlast.github.io/categories/%E5%90%84%E7%9C%81%E7%9C%81%E9%80%89/AHOI/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://playlast.github.io//SCOI2008-%E9%85%8D%E5%AF%B9/</loc>
+    <lastmod>2018-04-20T05:41:43.057Z</lastmod>
+    <data>
+        <display>
+        <title>[SCOI2008] 配对</title>
+        <pubTime>2018-04-17T10:49:05.000Z</pubTime>
+        
+        <tag>DP</tag>
+         
+         
+           
+             
+              <breadCrumb title="各省省选" url="https://playlast.github.io/categories/%E5%90%84%E7%9C%81%E7%9C%81%E9%80%89/"/>
+          
+             
+              <breadCrumb title="SCOI" url="https://playlast.github.io/categories/%E5%90%84%E7%9C%81%E7%9C%81%E9%80%89/SCOI/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://playlast.github.io//SDOI2008-%E6%B4%9E%E7%A9%B4%E5%8B%98%E6%B5%8B/</loc>
+    <lastmod>2018-04-20T05:38:56.137Z</lastmod>
+    <data>
+        <display>
+        <title>[SDOI2008] 洞穴勘测</title>
+        <pubTime>2018-04-18T05:21:15.000Z</pubTime>
+        
+        <tag>LCT</tag>
+         
+        <tag>并查集</tag>
+         
+         
+           
+             
+              <breadCrumb title="各省省选" url="https://playlast.github.io/categories/%E5%90%84%E7%9C%81%E7%9C%81%E9%80%89/"/>
+          
+             
+              <breadCrumb title="SDOI" url="https://playlast.github.io/categories/%E5%90%84%E7%9C%81%E7%9C%81%E9%80%89/SDOI/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://playlast.github.io//SDOI2005-%E9%98%B6%E6%A2%AF%E6%95%99%E5%AE%A4%E8%AE%BE%E5%A4%87%E5%88%A9%E7%94%A8/</loc>
+    <lastmod>2018-04-20T05:38:50.594Z</lastmod>
+    <data>
+        <display>
+        <title>[SDOI2005] 阶梯教室设备利用</title>
+        <pubTime>2018-04-07T12:51:01.000Z</pubTime>
+        
+        <tag>DP</tag>
+         
+        <tag>线段树</tag>
+         
+         
+           
+             
+              <breadCrumb title="各省省选" url="https://playlast.github.io/categories/%E5%90%84%E7%9C%81%E7%9C%81%E9%80%89/"/>
+          
+             
+              <breadCrumb title="SDOI" url="https://playlast.github.io/categories/%E5%90%84%E7%9C%81%E7%9C%81%E9%80%89/SDOI/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://playlast.github.io//SCOI2011-%E7%B3%96%E6%9E%9C/</loc>
+    <lastmod>2018-04-20T05:38:43.812Z</lastmod>
+    <data>
+        <display>
+        <title>[SCOI2011] 糖果</title>
+        <pubTime>2018-04-10T06:05:15.000Z</pubTime>
+        
+        <tag>图论</tag>
+         
+        <tag>差分约束</tag>
+         
+         
+           
+             
+              <breadCrumb title="各省省选" url="https://playlast.github.io/categories/%E5%90%84%E7%9C%81%E7%9C%81%E9%80%89/"/>
+          
+             
+              <breadCrumb title="SCOI" url="https://playlast.github.io/categories/%E5%90%84%E7%9C%81%E7%9C%81%E9%80%89/SCOI/"/>
+          
+        </display>
+    </data>
+    </url>
+
     
   <url>
     <loc>https://playlast.github.io//SCOI2009-%E7%94%9F%E6%97%A5%E7%A4%BC%E7%89%A9/</loc>
-    <lastmod>2018-04-13T13:08:03.941Z</lastmod>
+    <lastmod>2018-04-20T05:38:35.238Z</lastmod>
     <data>
         <display>
         <title>[SCOI2009] 生日礼物</title>
@@ -169,6 +189,34 @@
              
               <breadCrumb title="各省省选" url="https://playlast.github.io/categories/%E5%90%84%E7%9C%81%E7%9C%81%E9%80%89/"/>
           
+             
+              <breadCrumb title="SCOI" url="https://playlast.github.io/categories/%E5%90%84%E7%9C%81%E7%9C%81%E9%80%89/SCOI/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://playlast.github.io//HNOI2010-%E5%BC%B9%E9%A3%9E%E7%BB%B5%E7%BE%8A/</loc>
+    <lastmod>2018-04-20T05:38:18.253Z</lastmod>
+    <data>
+        <display>
+        <title>[HNOI2010] 弹飞绵羊</title>
+        <pubTime>2018-04-18T13:08:08.000Z</pubTime>
+        
+        <tag>LCT</tag>
+         
+        <tag>高级暴力</tag>
+         
+         
+           
+             
+              <breadCrumb title="各省省选" url="https://playlast.github.io/categories/%E5%90%84%E7%9C%81%E7%9C%81%E9%80%89/"/>
+          
+             
+              <breadCrumb title="HNOI" url="https://playlast.github.io/categories/%E5%90%84%E7%9C%81%E7%9C%81%E9%80%89/HNOI/"/>
+          
         </display>
     </data>
     </url>
@@ -176,7 +224,7 @@
     
   <url>
     <loc>https://playlast.github.io//HNOI2003-%E6%B6%88%E9%98%B2%E5%B1%80%E7%9A%84%E8%AE%BE%E7%AB%8B/</loc>
-    <lastmod>2018-04-13T12:59:59.224Z</lastmod>
+    <lastmod>2018-04-20T05:38:06.851Z</lastmod>
     <data>
         <display>
         <title>[HNOI2003] 消防局的设立</title>
@@ -191,6 +239,32 @@
              
               <breadCrumb title="各省省选" url="https://playlast.github.io/categories/%E5%90%84%E7%9C%81%E7%9C%81%E9%80%89/"/>
           
+             
+              <breadCrumb title="HNOI" url="https://playlast.github.io/categories/%E5%90%84%E7%9C%81%E7%9C%81%E9%80%89/HNOI/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://playlast.github.io//HAOI2007-%E7%90%86%E6%83%B3%E7%9A%84%E6%AD%A3%E6%96%B9%E5%BD%A2/</loc>
+    <lastmod>2018-04-20T05:37:44.691Z</lastmod>
+    <data>
+        <display>
+        <title>[HAOI2007] 理想的正方形</title>
+        <pubTime>2018-04-13T04:53:50.000Z</pubTime>
+        
+        <tag>二维RMQ</tag>
+         
+         
+           
+             
+              <breadCrumb title="各省省选" url="https://playlast.github.io/categories/%E5%90%84%E7%9C%81%E7%9C%81%E9%80%89/"/>
+          
+             
+              <breadCrumb title="HAOI" url="https://playlast.github.io/categories/%E5%90%84%E7%9C%81%E7%9C%81%E9%80%89/HAOI/"/>
+          
         </display>
     </data>
     </url>
@@ -198,7 +272,7 @@
     
   <url>
     <loc>https://playlast.github.io//CF962D-Merge-Equals/</loc>
-    <lastmod>2018-04-13T12:56:05.331Z</lastmod>
+    <lastmod>2018-04-19T23:36:08.500Z</lastmod>
     <data>
         <display>
         <title>CF962D Merge Equals</title>
@@ -215,6 +289,7 @@
     </data>
     </url>
 
+    
     
     
 </urlset>
