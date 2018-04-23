@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://playlast.github.io//NOIp2013-%E7%81%AB%E6%9F%B4%E6%8E%92%E9%98%9F/</loc>
-    <lastmod>2018-04-23T14:01:18.550Z</lastmod>
+    <lastmod>2018-04-23T14:04:12.613Z</lastmod>
     <data>
         <display>
         <title>[NOIp2013] 火柴排队</title>
@@ -21,7 +21,10 @@
               <breadCrumb title="NOIp" url="https://playlast.github.io/categories/NOIp/"/>
           
              
-              <breadCrumb title="PJ" url="https://playlast.github.io/categories/NOIp/PJ/"/>
+              <breadCrumb title="2013" url="https://playlast.github.io/categories/NOIp/2013/"/>
+          
+             
+              <breadCrumb title="PJ" url="https://playlast.github.io/categories/NOIp/2013/PJ/"/>
           
         </display>
     </data>
@@ -108,9 +111,9 @@
         <title>[SCOI2011] 糖果</title>
         <pubTime>2018-04-10T06:05:15.000Z</pubTime>
         
-        <tag>差分约束</tag>
-         
         <tag>图论</tag>
+         
+        <tag>差分约束</tag>
          
          
            
@@ -133,9 +136,9 @@
         <title>[SDOI2008] 洞穴勘测</title>
         <pubTime>2018-04-18T05:21:15.000Z</pubTime>
         
-        <tag>并查集</tag>
-         
         <tag>LCT</tag>
+         
+        <tag>并查集</tag>
          
          
            
