@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[[ZJOI2007] 棋盘制作]]></title>
+    <url>%2F%2FZJOI2007-%E6%A3%8B%E7%9B%98%E5%88%B6%E4%BD%9C%2F</url>
+    <content type="text"><![CDATA[题目链接[ZJOI2007]棋盘制作 题意简述给定一个长度为 n \ (n]]></content>
+      <categories>
+        <category>各省省选</category>
+        <category>ZJOI</category>
+      </categories>
+      <tags>
+        <tag>最大化子矩形</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[[CTSC2014] 企鹅QQ]]></title>
     <url>%2F%2FCTSC2014-%E4%BC%81%E9%B9%85QQ%2F</url>
     <content type="text"><![CDATA[题目链接[CTSC2014]企鹅QQ 题意简述给定 n \ (n]]></content>
@@ -21,18 +33,6 @@
       </categories>
       <tags>
         <tag>std::set</tag>
-        <tag>平衡树</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[fhq Treap（待填充）]]></title>
-    <url>%2F%2Ffhq-Treap%EF%BC%88%E5%BE%85%E5%A1%AB%E5%85%85%EF%BC%89%2F</url>
-    <content type="text"><![CDATA[简述非旋平衡树。 核心 $Split$ 和 $Merge$ 。 $Split$ 这里是按权值分配。 剩下的操作想想就出来了。 123456789101112131415161718192021222324252627int val[kmax_num], cnt[kmax_num], siz[kmax_num], pri[kmax_num];inline void Split(REG int now, REG int k, REG int&amp; x, REG int&amp; y) &#123; if(!now) x = y =0; else &#123; if(val[now] &lt;= k) x = now, Split(ch[now][1], k, ch[now][1], y); else y = now, Split(ch[now][0], k, x, ch[now][0]); PushUp(now); return ; &#125;&#125;inline int Merge(REG int x, REG int y) &#123; if(!x || !y) return x + y; else &#123; if(pri[x] &lt; pri[y]) &#123; ch[x][1] = Merge(ch[x][1], y); PushUp(x); return x; &#125; else &#123; ch[y][0] = Merge(x, ch[y][0]); PushUp(y); return y; &#125; &#125;&#125;]]></content>
-      <categories>
-        <category>数据结构</category>
-        <category>平衡树</category>
-      </categories>
-      <tags>
         <tag>平衡树</tag>
       </tags>
   </entry>
@@ -85,7 +85,7 @@
       </categories>
       <tags>
         <tag>LCT</tag>
-        <tag>高级暴力</tag>
+        <tag>暴力</tag>
       </tags>
   </entry>
   <entry>
